@@ -3,6 +3,9 @@ package herrs
 // 全局错误码定义
 // 999**
 var (
-	SUCCESS = New("00000", "OK")
-	FAIL    = New("ERROR", "FAIL")
+	E00000 = New("00000", "OK")
+	E99999 = New("99999", "FAIL")
+	E99901 = New("99901", "参数格式错误")
+	E99910 = New("99910", "会话过期，请重新授权")
+	E99920 = New("99920", "无效Code")
 )
